@@ -1,0 +1,16 @@
+{% extends "bos/base.html" %}
+{% block page_header %}
+<div class="jumbotron">
+  <h1 class="display-3">BOS done right.</h1>
+  <p class="lead">The faster, easier way to log your BOS conversations.</p>
+  {% if user.is_authenticated %}
+    <a class="btn btn-lg btn-primary" href="{% url 'bos:new_bos' %}"
+      role="button">Submit BOS &raquo;</a>
+  {% else %}
+    <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
+      role="button">Register &raquo;</a>
+      <a class="btn btn-lg btn-primary" href="{% url 'users:login' %}"
+      role="button">Login &raquo;</a>
+  {% endif %}
+</div>
+{% endblock page_header %}

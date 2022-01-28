@@ -1,0 +1,6 @@
+# JDEapp
+Repo for the JDE app.
+
+Functionality added so far.....
+
+    # .....

@@ -1,0 +1,1 @@
+web: gunicorn jde_app.wsgi --log-file -

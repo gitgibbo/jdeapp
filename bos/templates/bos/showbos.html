@@ -1,0 +1,8 @@
+{% extends "bos/base.html" %}
+{% block content %}
+<p>{{bos_id}}</p>
+<p>Area: {{ area }}</p>
+<p>Topic: {{ topic }}</p>
+<p>Comments: {{ comments }}</p>
+<p>Created by {{ owner|upper }} on {{ date }}</p>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends "bos/base.html" %}
+{% load bootstrap4 %}
+
+{% block content %}
+<p>Submit your BOS</p>
+
+<form action="{% url 'bos:new_bos' %}" method='post' class="form">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+    <button name="submit" class="btn btn-primary">Submit your BOS</button>
+    {% endbuttons %}
+</form>
+{% endblock content %}

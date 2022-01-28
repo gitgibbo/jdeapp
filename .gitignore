@@ -1,0 +1,5 @@
+jde_app/pyvenv.cfg/
+jde_app/Scripts/
+jde_app/Lib/
+__pycache__/
+*.sqlite3
