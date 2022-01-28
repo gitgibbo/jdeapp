@@ -1,1 +1,1 @@
-web: gunicorn jde_app.wsgi --log-file -
+web: gunicorn jde_app/wsgi --log-file -
