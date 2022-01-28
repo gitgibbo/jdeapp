@@ -10,7 +10,9 @@
     {% csrf_token %}
     {% bootstrap_form form %}
     {% buttons %}
-      <button name="submit" class="btn btn-primary">Log in</button>
+      <button name="submit" class="btn btn-primary">Log in</button><p></p>
+      <p><a class="btn btn-primary" href="{% url 'users:register' %}"
+      role="button">Register &raquo;</a></p>
     {% endbuttons %}
     <input type="hidden" name="next"
       value="{% url 'bos:index' %}" />
