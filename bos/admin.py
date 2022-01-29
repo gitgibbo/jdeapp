@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import BOS, Topic, Shift, BOS_area
+from .models import BOS, Topic, Shift, Area
 
 
 #admin.site.register(BOS)
@@ -10,7 +10,7 @@ class BOSadmin(admin.ModelAdmin):
 
 admin.site.register(Topic)
 admin.site.register(Shift)
-admin.site.register(BOS_area)
+admin.site.register(Area)
 
 
 admin.site.site_header = "JDE application Admin"
