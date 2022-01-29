@@ -44,7 +44,6 @@ class BOS(models.Model):
     Shift = models.ForeignKey(BOS_shift, on_delete=models.CASCADE)
     Topic = models.ForeignKey(BOS_topic, on_delete=models.CASCADE)
     Comments = models.TextField()
-
     date_added = models.DateTimeField(auto_now_add=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     class Meta:
