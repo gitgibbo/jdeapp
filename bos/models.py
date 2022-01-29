@@ -51,5 +51,4 @@ class BOS(models.Model):
         verbose_name_plural = 'BOS Entries'
 
     def __str__(self):
-        ID = str(self.id)
-        return ('BOS #' + ID)
+        return ('BOS #' + str(self.id))
