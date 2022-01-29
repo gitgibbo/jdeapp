@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # 3rd party apps
     'bootstrap4',
+    'import_export',
     
     # My apps
     'bos',
