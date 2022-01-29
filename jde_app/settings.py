@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     # My apps
     'bos',
     'users',
+    'permit_to_work',
     
     # Installed Apps
     'django.contrib.admin',
