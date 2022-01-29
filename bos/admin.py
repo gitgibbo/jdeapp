@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import BOS, BOS_topic, BOS_shift, BOS_area
+from .models import BOS, Topic, Shift, BOS_area
 
 
 #admin.site.register(BOS)
@@ -8,8 +8,8 @@ from .models import BOS, BOS_topic, BOS_shift, BOS_area
 class BOSadmin(admin.ModelAdmin):
     list_display = ['__str__', 'owner', 'Area']
 
-admin.site.register(BOS_topic)
-admin.site.register(BOS_shift)
+admin.site.register(Topic)
+admin.site.register(Shift)
 admin.site.register(BOS_area)
 
 
