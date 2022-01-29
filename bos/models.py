@@ -25,7 +25,7 @@ class Shift(models.Model):
         """Return string representation of model"""
         return self.text
 
-class BOS_area(models.Model):
+class Area(models.Model):
     """Create an area for entry into BOS's"""
     text = models.CharField(max_length=200)
     date_added = models.DateTimeField(auto_now_add=True)
@@ -40,7 +40,7 @@ class BOS_area(models.Model):
 class BOS(models.Model):
     """The main structure of a BOS"""
     
-    Area = models.ForeignKey(BOS_area, on_delete=models.CASCADE)
+    Area = models.ForeignKey(Area, on_delete=models.CASCADE)
     Shift = models.ForeignKey(Shift, on_delete=models.CASCADE)
     Topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     Comments = models.TextField()
