@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-atjxiqe&n_gk&(!-68lb^$h$o*g)xi#31i$rr@4nd8q*ld2kvo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://jdeapp.azurewebsites.net']
+ALLOWED_HOSTS = ['https://jdeapp.azurewebsites.net', os.environ.get('HOST_IP')]
 CSRF_TRUSTED_ORIGINS = ['https://jdeapp.azurewebsites.net']
 
 
