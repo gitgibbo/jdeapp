@@ -3,3 +3,4 @@ jde_app/Scripts/
 jde_app/Lib/
 __pycache__/
 *.sqlite3
+.vscode/settings.json
