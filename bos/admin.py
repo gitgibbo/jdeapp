@@ -1,8 +1,9 @@
 from django.contrib import admin
+from django.contrib.auth.models import Permission
 from import_export.admin import ImportExportModelAdmin
 from .models import BOS, Topic, Shift, Area
 from permit_to_work.models import permit_to_work
-
+admin.site.register(Permission)
 
 #admin.site.register(BOS)
 @admin.register(BOS)
