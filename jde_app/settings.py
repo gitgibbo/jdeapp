@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-atjxiqe&n_gk&(!-68lb^$h$o*g)xi#31i$rr@4nd8q*ld2kvo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://jdeapp.azurewebsites.net',]
+ALLOWED_HOSTS = ['.azurewebsites.net','127.0.0.1:8000']
 
 
 # Application definition
@@ -136,5 +136,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = 'users:login'
 
 # heroku settings.
-import django_heroku
-django_heroku.settings(locals())
+#import django_heroku
+#django_heroku.settings(locals())
